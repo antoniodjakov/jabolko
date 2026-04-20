@@ -484,30 +484,29 @@ h3 {
   font-size: 1.06rem;
 }
 
-.season-stats {
+.season-notes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
-.season-stats article {
-  min-height: 160px;
+.season-notes article {
+  min-height: 150px;
   padding: 20px;
   border: 1px solid rgba(247, 242, 231, 0.18);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
 }
 
-.season-stats span {
-  display: block;
+.season-notes h3 {
+  margin: 0;
   color: var(--wheat);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.9rem;
-  font-weight: 800;
-  line-height: 1;
+  font-size: 1.45rem;
+  line-height: 1.08;
 }
 
-.season-stats p {
+.season-notes p {
   margin: 14px 0 0;
   color: rgba(247, 242, 231, 0.8);
   font-weight: 700;
@@ -592,7 +591,7 @@ h3 {
     min-height: 0;
   }
 
-  .season-stats {
+  .season-notes {
     grid-template-columns: repeat(3, minmax(180px, 1fr));
     overflow-x: auto;
     padding-bottom: 2px;
@@ -685,12 +684,12 @@ h3 {
 
   .intro-grid article,
   .process-grid article,
-  .season-stats article {
+  .season-notes article {
     min-height: 0;
   }
 
   .process-grid,
-  .season-stats {
+  .season-notes {
     grid-template-columns: 1fr;
     overflow: visible;
   }
