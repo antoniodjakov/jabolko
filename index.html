@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jabolko.mk produces apple cider, apple vinegar, and supports small-scale vine production."
+    />
+    <meta name="theme-color" content="#244936" />
+    <title>Jabolko.mk | Cider, Vinegar & Vine Production</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Jabolko.mk home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Jabolko.mk</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#production">Production</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Orchard fruit. Cellar craft. Seasonal batches.</p>
+          <h1 id="hero-title">Jabolko.mk</h1>
+          <p class="hero-lede">
+            Apple cider, naturally aged vinegar, and vine production rooted in careful
+            harvesting, clean fermentation, and patient cellar work.
+          </p>
+          <div class="hero-actions" aria-label="Page actions">
+            <a class="button button-primary" href="#production">Explore production</a>
+            <a class="button button-secondary" href="mailto:contact@jabolko.mk">Start a conversation</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Production highlights">
+        <div class="intro-grid">
+          <article>
+            <span class="small-label">01</span>
+            <h2>Pressed fresh</h2>
+            <p>Fruit is selected by season, washed, milled, and pressed for bright juice with orchard character.</p>
+          </article>
+          <article>
+            <span class="small-label">02</span>
+            <h2>Slow fermentation</h2>
+            <p>Small lots are tracked from juice to bottle, with clean cellar conditions and balanced acidity.</p>
+          </article>
+          <article>
+            <span class="small-label">03</span>
+            <h2>Grown with care</h2>
+            <p>Vines are trained and maintained through pruning, canopy work, and harvest timing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="production-section" id="production" aria-labelledby="production-title">
+        <div class="section-heading">
+          <p class="eyebrow">What we make</p>
+          <h2 id="production-title">Three lines from field to bottle</h2>
+          <p>
+            Each line follows the same practical rhythm: harvest carefully, process cleanly,
+            ferment with patience, and keep batches transparent from start to finish.
+          </p>
+        </div>
+
+        <div class="tabs-shell">
+          <div class="tabs" role="tablist" aria-label="Production lines">
+            <button
+              class="tab is-active"
+              id="tab-cider"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-cider"
+              data-tab="cider"
+            >
+              Apple cider
+            </button>
+            <button
+              class="tab"
+              id="tab-vinegar"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-vinegar"
+              data-tab="vinegar"
+              tabindex="-1"
+            >
+              Apple vinegar
+            </button>
+            <button
+              class="tab"
+              id="tab-vines"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-vines"
+              data-tab="vines"
+              tabindex="-1"
+            >
+              Vine production
+            </button>
+          </div>
+
+          <article
+            class="tab-panel"
+            id="panel-cider"
+            role="tabpanel"
+            aria-labelledby="tab-cider"
+            data-panel="cider"
+          >
+            <img src="assets/cider.png" alt="Bottles of apple cider beside fresh apples" />
+            <div class="panel-copy">
+              <p class="small-label">Apple cider</p>
+              <h3>Fresh-pressed cider with a clean orchard finish.</h3>
+              <p>
+                Built for crisp drinking, tastings, and seasonal table service. The cider
+                line focuses on bright fruit, balanced acidity, and clean fermentation from
+                press to bottle.
+              </p>
+              <ul class="feature-list">
+                <li>Whole-fruit pressing</li>
+                <li>Small fermentation lots</li>
+                <li>Still or lightly sparkling batches</li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="tab-panel"
+            id="panel-vinegar"
+            role="tabpanel"
+            aria-labelledby="tab-vinegar"
+            data-panel="vinegar"
+            hidden
+          >
+            <img src="assets/vinegar.png" alt="Apple vinegar in a clear bottle with apples and herbs" />
+            <div class="panel-copy">
+              <p class="small-label">Apple vinegar</p>
+              <h3>Naturally aged vinegar for kitchens and makers.</h3>
+              <p>
+                A vinegar line for salads, marinades, pickling, and fermentation-minded
+                cooks. Patient aging gives the vinegar a rounded apple character with a
+                lively finish.
+              </p>
+              <ul class="feature-list">
+                <li>Apple-based fermentation</li>
+                <li>Patient aging</li>
+                <li>Food-friendly acidity</li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="tab-panel"
+            id="panel-vines"
+            role="tabpanel"
+            aria-labelledby="tab-vines"
+            data-panel="vines"
+            hidden
+          >
+            <img src="assets/vines.png" alt="Rows of trained vines on a small hillside plot" />
+            <div class="panel-copy">
+              <p class="small-label">Vine production</p>
+              <h3>Healthy vines managed through the full season.</h3>
+              <p>
+                A clear home for vineyard or vine-growing updates: pruning, trellis work,
+                canopy management, harvest planning, and the move from field work into
+                cellar production.
+              </p>
+              <ul class="feature-list">
+                <li>Seasonal pruning</li>
+                <li>Trellis and canopy care</li>
+                <li>Harvest-ready vine management</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="process-section" id="process" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2 id="process-title">A simple production rhythm</h2>
+        </div>
+        <div class="process-grid">
+          <article>
+            <h3>Harvest</h3>
+            <p>Pick fruit and grapes at the point where sugar, acidity, aroma, and texture feel balanced.</p>
+          </article>
+          <article>
+            <h3>Press</h3>
+            <p>Prepare clean juice with careful washing, milling, pressing, and first-stage filtering.</p>
+          </article>
+          <article>
+            <h3>Ferment</h3>
+            <p>Track small lots through controlled fermentation, aging, and natural acid development.</p>
+          </article>
+          <article>
+            <h3>Bottle</h3>
+            <p>Package finished batches for tasting, local sales, and future wholesale conversations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">For batches, tastings, and local supply.</h2>
+          <p>
+            Send a message for cider availability, vinegar orders, seasonal tastings, or
+            vine-production collaboration.
+          </p>
+        </div>
+        <a class="button button-primary" href="mailto:contact@jabolko.mk">contact@jabolko.mk</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Jabolko.mk</span>
+      <span>Apple cider, vinegar, and vine production</span>
+    </footer>
+  </body>
+</html>
