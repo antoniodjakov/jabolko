@@ -1,27 +1,27 @@
-# Jabolko.mk
+# Јаболко.мк
 
-A simple static GitHub Pages site for apple cider, apple vinegar, and vine production.
+Едноставна статичка GitHub Pages страница за јаболков сајдер, јаболков оцет и лозарско производство.
 
-## Files
+## Датотеки
 
-- `index.html` - the page content and tab panels.
-- `styles.css` - responsive layout and visual styling.
-- `script.js` - accessible tab switching.
-- `assets/` - local image assets and favicon.
-- `CNAME` - custom domain configuration for `jabolko.mk`.
+- `index.html` - содржина на страницата и таб панели.
+- `styles.css` - респонзивен распоред и визуелен стил.
+- `script.js` - пристапно префрлување меѓу табови.
+- `assets/` - локални слики и favicon.
+- `CNAME` - конфигурација за доменот `jabolko.mk`.
 
-## Publish on GitHub Pages
+## Објавување на GitHub Pages
 
-1. Create a GitHub repository.
-2. Push this folder to the repository.
-3. In GitHub, open `Settings` -> `Pages`.
-4. Set the source to deploy from the branch root, usually `main` and `/`.
-5. Confirm the custom domain is `jabolko.mk`.
-6. Enable HTTPS after GitHub finishes issuing the certificate.
+1. Креирај GitHub репозиториум.
+2. Испрати ја оваа папка во репозиториумот.
+3. Во GitHub отвори `Settings` -> `Pages`.
+4. Постави изворот за објавување да биде главната папка на гранката, најчесто `main` и `/`.
+5. Потврди дека сопствениот домен е `jabolko.mk`.
+6. Вклучи HTTPS откако GitHub ќе го издаде сертификатот.
 
-## DNS notes
+## DNS белешки
 
-For the apex domain `jabolko.mk`, GitHub Pages currently documents these `A` records:
+За основниот домен `jabolko.mk`, GitHub Pages моментално ги документира овие `A` записи:
 
 ```text
 185.199.108.153
@@ -30,6 +30,6 @@ For the apex domain `jabolko.mk`, GitHub Pages currently documents these `A` rec
 185.199.111.153
 ```
 
-If you also want `www.jabolko.mk`, create a `CNAME` DNS record for `www` that points to your GitHub Pages default domain, such as `YOUR-USERNAME.github.io`.
+Ако сакаш и `www.jabolko.mk`, креирај `CNAME` DNS запис за `www` што покажува кон твојот стандарден GitHub Pages домен, на пример `YOUR-USERNAME.github.io`.
 
-Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+Референца: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site

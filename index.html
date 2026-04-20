@@ -1,79 +1,80 @@
 <!doctype html>
-<html lang="en">
+<html lang="mk">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#244936" />
     <meta
       name="description"
-      content="Jabolko.mk produces apple cider, apple vinegar, and supports small-scale vine production."
+      content="Јаболко.мк произведува јаболков сајдер, јаболков оцет и работи на лозарско производство."
     />
-    <meta name="theme-color" content="#244936" />
-    <title>Jabolko.mk | Cider, Vinegar & Vine Production</title>
+    <title>Јаболко.мк | Сајдер, оцет и лозарско производство</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Jabolko.mk home">
+      <a class="brand" href="#top" aria-label="Јаболко.мк почетна">
         <span class="brand-mark" aria-hidden="true"></span>
-        <span>Jabolko.mk</span>
+        <span>Јаболко.мк</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#production">Production</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
+      <nav class="site-nav" aria-label="Главна навигација">
+        <a href="#production">Производство</a>
+        <a href="#process">Процес</a>
+        <a href="#contact">Контакт</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Orchard fruit. Cellar craft. Seasonal batches.</p>
-          <h1 id="hero-title">Jabolko.mk</h1>
+          <p class="eyebrow">Овошје од насад. Занает во визба. Сезонски серии.</p>
+          <h1 id="hero-title">Јаболко.мк</h1>
           <p class="hero-lede">
-            Apple cider, naturally aged vinegar, and vine production rooted in careful
-            harvesting, clean fermentation, and patient cellar work.
+            Јаболков сајдер, природно одлежан оцет и лозарско производство
+            засновани на внимателна берба, чиста ферментација и трпелива визбена работа.
           </p>
-          <div class="hero-actions" aria-label="Page actions">
-            <a class="button button-primary" href="#production">Explore production</a>
-            <a class="button button-secondary" href="mailto:contact@jabolko.mk">Start a conversation</a>
+          <div class="hero-actions" aria-label="Акции на страницата">
+            <a class="button button-primary" href="#production">Погледни производство</a>
+            <a class="button button-secondary" href="mailto:contact@jabolko.mk">Испрати порака</a>
           </div>
         </div>
       </section>
 
-      <section class="intro-band" aria-label="Production highlights">
+      <section class="intro-band" aria-label="Најважно од производството">
         <div class="intro-grid">
           <article>
             <span class="small-label">01</span>
-            <h2>Pressed fresh</h2>
-            <p>Fruit is selected by season, washed, milled, and pressed for bright juice with orchard character.</p>
+            <h2>Свежо цедено</h2>
+            <p>Овошјето се избира сезонски, се мие, се меле и се цеди за жив сок со карактер од насадот.</p>
           </article>
           <article>
             <span class="small-label">02</span>
-            <h2>Slow fermentation</h2>
-            <p>Small lots are tracked from juice to bottle, with clean cellar conditions and balanced acidity.</p>
+            <h2>Бавна ферментација</h2>
+            <p>Малите серии се следат од сок до шише, со чисти визбени услови и урамнотежена киселост.</p>
           </article>
           <article>
             <span class="small-label">03</span>
-            <h2>Grown with care</h2>
-            <p>Vines are trained and maintained through pruning, canopy work, and harvest timing.</p>
+            <h2>Одгледано со грижа</h2>
+            <p>Лозите се водат и одржуваат преку резидба, зелена работа и добро темпирана берба.</p>
           </article>
         </div>
       </section>
 
       <section class="production-section" id="production" aria-labelledby="production-title">
         <div class="section-heading">
-          <p class="eyebrow">What we make</p>
-          <h2 id="production-title">Three lines from field to bottle</h2>
+          <p class="eyebrow">Што произведуваме</p>
+          <h2 id="production-title">Три линии од поле до шише</h2>
           <p>
-            Each line follows the same practical rhythm: harvest carefully, process cleanly,
-            ferment with patience, and keep batches transparent from start to finish.
+            Секоја линија го следи истиот практичен ритам: внимателна берба,
+            чиста преработка, трпелива ферментација и јасно следење на сериите
+            од почеток до крај.
           </p>
         </div>
 
         <div class="tabs-shell">
-          <div class="tabs" role="tablist" aria-label="Production lines">
+          <div class="tabs" role="tablist" aria-label="Производни линии">
             <button
               class="tab is-active"
               id="tab-cider"
@@ -83,7 +84,7 @@
               aria-controls="panel-cider"
               data-tab="cider"
             >
-              Apple cider
+              Јаболков сајдер
             </button>
             <button
               class="tab"
@@ -95,7 +96,7 @@
               data-tab="vinegar"
               tabindex="-1"
             >
-              Apple vinegar
+              Јаболков оцет
             </button>
             <button
               class="tab"
@@ -107,7 +108,7 @@
               data-tab="vines"
               tabindex="-1"
             >
-              Vine production
+              Лозарско производство
             </button>
           </div>
 
@@ -118,19 +119,19 @@
             aria-labelledby="tab-cider"
             data-panel="cider"
           >
-            <img src="assets/cider.png" alt="Bottles of apple cider beside fresh apples" />
+            <img src="assets/cider.png" alt="Шишиња јаболков сајдер покрај свежи јаболка" />
             <div class="panel-copy">
-              <p class="small-label">Apple cider</p>
-              <h3>Fresh-pressed cider with a clean orchard finish.</h3>
+              <p class="small-label">Јаболков сајдер</p>
+              <h3>Свежо цеден сајдер со чист овошен финиш.</h3>
               <p>
-                Built for crisp drinking, tastings, and seasonal table service. The cider
-                line focuses on bright fruit, balanced acidity, and clean fermentation from
-                press to bottle.
+                Направен за освежително пиење, дегустации и сезонско послужување.
+                Линијата за сајдер се фокусира на изразено овошје, урамнотежена
+                киселост и чиста ферментација од цедење до шише.
               </p>
               <ul class="feature-list">
-                <li>Whole-fruit pressing</li>
-                <li>Small fermentation lots</li>
-                <li>Still or lightly sparkling batches</li>
+                <li>Цедење на цело овошје</li>
+                <li>Мали ферментациски серии</li>
+                <li>Мирни или лесно пенливи серии</li>
               </ul>
             </div>
           </article>
@@ -143,19 +144,19 @@
             data-panel="vinegar"
             hidden
           >
-            <img src="assets/vinegar.png" alt="Apple vinegar in a clear bottle with apples and herbs" />
+            <img src="assets/vinegar.png" alt="Јаболков оцет во проѕирно шише со јаболка и билки" />
             <div class="panel-copy">
-              <p class="small-label">Apple vinegar</p>
-              <h3>Naturally aged vinegar for kitchens and makers.</h3>
+              <p class="small-label">Јаболков оцет</p>
+              <h3>Природно одлежан оцет за кујни и мали производители.</h3>
               <p>
-                A vinegar line for salads, marinades, pickling, and fermentation-minded
-                cooks. Patient aging gives the vinegar a rounded apple character with a
-                lively finish.
+                Линија оцет за салати, маринади, туршија и готвачи што ја ценат
+                ферментацијата. Трпеливото одлежување му дава заоблен јаболков
+                карактер и жив завршеток.
               </p>
               <ul class="feature-list">
-                <li>Apple-based fermentation</li>
-                <li>Patient aging</li>
-                <li>Food-friendly acidity</li>
+                <li>Ферментација на база на јаболко</li>
+                <li>Трпеливо одлежување</li>
+                <li>Киселост погодна за храна</li>
               </ul>
             </div>
           </article>
@@ -168,19 +169,19 @@
             data-panel="vines"
             hidden
           >
-            <img src="assets/vines.png" alt="Rows of trained vines on a small hillside plot" />
+            <img src="assets/vines.png" alt="Редови негувани лози на мала падинска парцела" />
             <div class="panel-copy">
-              <p class="small-label">Vine production</p>
-              <h3>Healthy vines managed through the full season.</h3>
+              <p class="small-label">Лозарско производство</p>
+              <h3>Здрави лози негувани низ целата сезона.</h3>
               <p>
-                A clear home for vineyard or vine-growing updates: pruning, trellis work,
-                canopy management, harvest planning, and the move from field work into
-                cellar production.
+                Јасен простор за лозарски активности: резидба, потпорна конструкција,
+                зелена работа, планирање на берба и премин од работа на поле кон
+                визбено производство.
               </p>
               <ul class="feature-list">
-                <li>Seasonal pruning</li>
-                <li>Trellis and canopy care</li>
-                <li>Harvest-ready vine management</li>
+                <li>Сезонска резидба</li>
+                <li>Грижа за шпалир и зелена маса</li>
+                <li>Подготовка на лозите за берба</li>
               </ul>
             </div>
           </article>
@@ -189,36 +190,36 @@
 
       <section class="process-section" id="process" aria-labelledby="process-title">
         <div class="section-heading">
-          <p class="eyebrow">How it works</p>
-          <h2 id="process-title">A simple production rhythm</h2>
+          <p class="eyebrow">Како работиме</p>
+          <h2 id="process-title">Едноставен производствен ритам</h2>
         </div>
         <div class="process-grid">
           <article>
-            <h3>Harvest</h3>
-            <p>Pick fruit and grapes at the point where sugar, acidity, aroma, and texture feel balanced.</p>
+            <h3>Берба</h3>
+            <p>Овошјето и грозјето се берат кога шеќерот, киселоста, аромата и текстурата се во рамнотежа.</p>
           </article>
           <article>
-            <h3>Press</h3>
-            <p>Prepare clean juice with careful washing, milling, pressing, and first-stage filtering.</p>
+            <h3>Цедење</h3>
+            <p>Се добива чист сок преку внимателно миење, мелење, цедење и првично филтрирање.</p>
           </article>
           <article>
-            <h3>Ferment</h3>
-            <p>Track small lots through controlled fermentation, aging, and natural acid development.</p>
+            <h3>Ферментација</h3>
+            <p>Малите серии се следат низ контролирана ферментација, одлежување и природен развој на киселини.</p>
           </article>
           <article>
-            <h3>Bottle</h3>
-            <p>Package finished batches for tasting, local sales, and future wholesale conversations.</p>
+            <h3>Полнење</h3>
+            <p>Готовите серии се полнат за дегустации, локална продажба и идни разговори за соработка.</p>
           </article>
         </div>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">For batches, tastings, and local supply.</h2>
+          <p class="eyebrow">Контакт</p>
+          <h2 id="contact-title">За серии, дегустации и локална набавка.</h2>
           <p>
-            Send a message for cider availability, vinegar orders, seasonal tastings, or
-            vine-production collaboration.
+            Испратете порака за достапност на сајдер, нарачки за оцет,
+            сезонски дегустации или соработка во лозарско производство.
           </p>
         </div>
         <a class="button button-primary" href="mailto:contact@jabolko.mk">contact@jabolko.mk</a>
@@ -226,8 +227,8 @@
     </main>
 
     <footer class="site-footer">
-      <span>Jabolko.mk</span>
-      <span>Apple cider, vinegar, and vine production</span>
+      <span>Јаболко.мк</span>
+      <span>Јаболков сајдер, оцет и лозарско производство</span>
     </footer>
   </body>
 </html>
