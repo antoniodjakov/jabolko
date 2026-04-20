@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 img {
@@ -228,7 +230,7 @@ h3 {
 
 .intro-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 18px;
   width: min(var(--max-width), 100%);
   margin: 0 auto;
@@ -340,10 +342,12 @@ h3 {
   display: grid;
   align-content: start;
   gap: 10px;
+  min-width: 0;
 }
 
 .tab {
   min-height: 56px;
+  min-width: 0;
   padding: 12px 16px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -377,6 +381,7 @@ h3 {
   border-radius: 8px;
   background: #ffffff;
   box-shadow: var(--shadow);
+  min-width: 0;
 }
 
 .tab-panel[hidden] {
@@ -486,7 +491,7 @@ h3 {
 
 .season-notes {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
   gap: 14px;
 }
 
@@ -573,18 +578,14 @@ h3 {
   }
 
   .tabs {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-    overflow-x: auto;
-    padding-bottom: 2px;
-    scroll-snap-type: x proximity;
   }
 
   .tab {
-    flex: 0 0 auto;
-    min-width: 168px;
+    width: 100%;
     text-align: center;
-    scroll-snap-align: start;
   }
 
   .tab-panel {
@@ -592,9 +593,7 @@ h3 {
   }
 
   .season-notes {
-    grid-template-columns: repeat(3, minmax(180px, 1fr));
-    overflow-x: auto;
-    padding-bottom: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
   }
 
   .contact-section .button-primary {
@@ -623,10 +622,6 @@ h3 {
     font-size: 1.16rem;
   }
 
-  .intro-grid {
-    grid-template-columns: 1fr;
-  }
-
   .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -634,16 +629,17 @@ h3 {
 
 @media (max-width: 620px) {
   .site-header {
-    align-items: stretch;
-    flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
     min-height: 0;
-    padding: 14px 18px;
+    padding: 12px 14px;
   }
 
   .site-nav {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 6px;
     width: 100%;
     font-size: 0.86rem;
@@ -662,19 +658,43 @@ h3 {
   }
 
   .hero {
-    min-height: calc(100svh - 136px);
-    padding: 42px 20px;
+    min-height: auto;
+    padding: 54px 18px 46px;
     background:
       linear-gradient(90deg, rgba(15, 25, 18, 0.82), rgba(15, 25, 18, 0.34)),
       url("assets/hero-orchard.png") 62% center / cover;
   }
 
   h1 {
-    font-size: 3.7rem;
+    font-size: 3.35rem;
   }
 
   h2 {
-    font-size: 2.15rem;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.42rem;
+  }
+
+  .eyebrow,
+  .small-label {
+    font-size: 0.7rem;
+  }
+
+  .production-section,
+  .process-section,
+  .story-section,
+  .season-section {
+    padding: 52px 18px;
+  }
+
+  .intro-band {
+    padding: 28px 18px;
+  }
+
+  .tab-panel {
+    padding: 16px;
   }
 
   .hero-actions,
@@ -701,16 +721,24 @@ h3 {
 }
 
 @media (max-width: 430px) {
-  .site-nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   h1 {
-    font-size: 3.1rem;
+    font-size: 2.78rem;
   }
 
   .tab {
-    min-width: 146px;
     white-space: normal;
+  }
+
+  .site-nav {
+    font-size: 0.82rem;
+  }
+
+  .site-nav a {
+    min-height: 36px;
+    padding: 7px 5px;
+  }
+
+  .button {
+    padding-inline: 12px;
   }
 }
