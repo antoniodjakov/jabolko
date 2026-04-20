@@ -332,6 +332,10 @@ h3 {
   margin: 0 auto;
 }
 
+.production-section-compact .tabs-shell {
+  grid-template-columns: 210px minmax(0, 1fr);
+}
+
 .tabs {
   display: grid;
   align-content: start;
@@ -535,6 +539,18 @@ h3 {
   color: var(--apple);
 }
 
+.contact-actions {
+  display: grid;
+  justify-items: end;
+  gap: 12px;
+}
+
+.contact-actions .address {
+  margin: 0;
+  color: rgba(255, 253, 247, 0.88);
+  font-weight: 900;
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -584,6 +600,10 @@ h3 {
 
   .contact-section .button-primary {
     justify-self: start;
+  }
+
+  .contact-actions {
+    justify-items: start;
   }
 }
 
